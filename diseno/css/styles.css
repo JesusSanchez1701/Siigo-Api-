@@ -1,0 +1,257 @@
+
+/*boton flotante*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#btn-mas{
+  display: none;
+}
+.cont{
+  position: fixed;
+  bottom: 20px;
+  left: : 20px;
+}
+.redes a, .fa-plus{
+  display: block;
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  width: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  transition: all 500ms ease;
+}
+
+.redes a:hover{
+  background: #fff;
+  color: #e6c46e;
+}
+.redes a{
+  margin-bottom: -15px;
+  opacity: 0;
+  visibility: hidden;
+
+}
+#btn-mas:checked~ .redes a {
+  margin-bottom: 10px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/*contenido del tokent*/
+#contenido {
+  /*width: 230px;
+  white-space: nowrap;*/
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.barra {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 7%;
+  float: left;
+}
+.logo img {
+  width: 100%;
+}
+
+.contenedor {
+  width: 98%;
+  margin: 0 auto;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*menu de navegacion*/
+.navegacion-principal {
+  display: none;
+}
+.navegacion-principal a{
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all .6s ease;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.navegacion-principal a:hover {
+  background-color: #e6c46e;
+}
+.navegacion-principal a:last-child {
+  border: 2px solid #e6c46e;
+  color: white;
+}
+.navegacion-principal a:last-child:hover {
+  color: white;
+}
+@media (min-width: 768px) {
+  .navegacion-principal {
+    width: 67%;
+    float: right;
+    text-align: right;
+    display: block;
+  }
+  .navegacion-principal a {
+    padding: 10px 10px;
+    display: inline-block;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px 0 0;
+
+  }
+}
+
+.overlay{
+  background-color:rgba(0,0,0,.3); 
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+
+}
+.active{
+  visibility: visible;
+}
+.popup{
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  border-radius: 3px;
+  /*0font-family:*/ 
+  padding: 20px;
+  text-align: center;
+  width: 600px;
+}
+
+.btn-cerrar-popup{
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
+  text-align: right;
+  color: #BBBBBB;
+  transition: .3 ease all;
+}
+
+.btn-cerrar-popup:hover{
+  color: #000;
+}
+
+.popup h3 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  /*opacity: 0;*/
+
+}
+
+.popup h5 {
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  /*opacity: 0;*/
+  
+}
+
+
+.popup form .contenedor-inputs  input {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 52px;
+  line-height: 52px;
+  font-size: 18px;
+  text-align: center;
+  border: 1px solid #BBBBBB;
+}
+
+.popup form  .btn-submit {
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  border:none;
+  color: #fff;
+  background: #5E7DE3;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.popup form  .btn-submit:hover{
+  background: rgba(94,125,227, .9);
+}
+
+.flotante{
+  display: block;
+  background: #cc2b2b;
+  color: #fff;
+  width: 55px;
+  line-height: 55px;
+  text-align: center;
+  border-radius: 58%;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  transition: all 500ms ease;
+}
+.flotante:hover{
+  background: #fff
+  color:#cc2b2b;
+}
+
+/*ocultar boton*/
+.btn-copy{
+  opacity: 0;
+}
+
+
+/*pop up 2*/
+.over {
+  background-color:rgba(0,0,0,.3); 
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pop{
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  border-radius: 3px;
+  /*0font-family:*/ 
+  padding: 20px;
+  text-align: center;
+  width: 600px;
+
+}
+
+.cont-2{
+  position: relative;
+  top: 20px;
+}
